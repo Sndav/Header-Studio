@@ -2,6 +2,8 @@
 
 [中文](README.md) · **English**
 
+[GitHub repository](https://github.com/Sndav/ModHeader) · [Download the latest release](https://github.com/Sndav/ModHeader/releases/latest)
+
 A privacy-first, fully open-source Chrome extension for modifying request and response headers. Organize rules into multiple profiles and match URLs with host wildcards or RE2 regular expressions.
 
 **Your configuration stays local. There is no telemetry, analytics SDK, remote code, or server receiving your browsing data.**
@@ -29,12 +31,20 @@ A privacy-first, fully open-source Chrome extension for modifying request and re
 
 ## Installation
 
+### Install from a release
+
+1. Open [Releases](https://github.com/Sndav/ModHeader/releases).
+2. Download and extract the latest `header-studio-v*.zip`.
+3. Open `chrome://extensions` in Chrome.
+4. Enable **Developer mode**.
+5. Select **Load unpacked** and choose the extracted directory.
+
 ### Build from source
 
 Node.js 20.19 or newer is required.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Sndav/ModHeader.git
 cd ModHeader
 npm ci
 npm run build
@@ -116,7 +126,7 @@ npm test
 npm run build
 ```
 
-GitHub Actions runs type checking, tests, and a production build for every commit and pull request, then uploads the unpacked extension as an artifact.
+GitHub Actions runs type checking, tests, and a production build for every commit and pull request. Pushing a `v*` tag automatically creates a GitHub Release with an unpacked-extension ZIP and its SHA-256 checksum.
 
 ## License
 
