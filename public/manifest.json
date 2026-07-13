@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Header Studio",
-  "description": "本地优先的请求与响应 Header 规则编辑器。",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDescription__",
   "version": "0.1.0",
+  "default_locale": "zh_CN",
   "minimum_chrome_version": "120",
   "permissions": [
     "storage",
@@ -14,7 +15,7 @@
     "type": "module"
   },
   "action": {
-    "default_title": "Header Studio",
+    "default_title": "__MSG_actionTitle__",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icons/icon-16.png",

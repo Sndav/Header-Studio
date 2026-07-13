@@ -37,6 +37,6 @@ export function createProfile(name = 'New profile'): Profile {
 }
 
 export function createInitialState(): AppState {
-  const profile = createProfile('Default')
-  return { version: 1, selectedProfileId: profile.id, profiles: [profile] }
+  const profile = createProfile('默认')
+  return { version: 1, locale: 'zh-CN', selectedProfileId: profile.id, profiles: [profile] }
 }

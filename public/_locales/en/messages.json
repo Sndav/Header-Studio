@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Header Studio"
+  },
+  "appDescription": {
+    "message": "A privacy-first, telemetry-free request and response header rule editor."
+  },
+  "actionTitle": {
+    "message": "Open Header Studio"
+  }
+}

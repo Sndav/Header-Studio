@@ -71,6 +71,22 @@ input::placeholder { color: oklch(0.49 0.008 68); opacity: 1; }
 }
 .sync-status[data-error="true"] { color: var(--danger); }
 
+.language-button {
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--ink);
+  background: white;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 650;
+}
+.language-button:hover { border-color: var(--border-strong); background: var(--surface); }
+
 .icon-button {
   width: 30px;
   height: 30px;

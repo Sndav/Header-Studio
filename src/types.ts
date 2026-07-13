@@ -1,3 +1,5 @@
+import type { Locale } from './i18n'
+
 export type HeaderTarget = 'request' | 'response'
 export type HeaderOperation = 'set' | 'append' | 'remove'
 export type MatcherType = 'wildcard' | 'regex'
@@ -28,6 +30,7 @@ export interface Profile {
 
 export interface AppState {
   version: 1
+  locale?: Locale
   selectedProfileId: string
   profiles: Profile[]
 }

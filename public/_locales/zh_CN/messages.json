@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Header Studio"
+  },
+  "appDescription": {
+    "message": "隐私优先、无遥测的请求与响应 Header 规则编辑器。"
+  },
+  "actionTitle": {
+    "message": "打开 Header Studio"
+  }
+}
