@@ -2,7 +2,7 @@
 
 [中文](README.md) · **English**
 
-[GitHub repository](https://github.com/Sndav/ModHeader) · [Download the latest release](https://github.com/Sndav/ModHeader/releases/latest)
+[GitHub repository](https://github.com/Sndav/Header-Studio) · [Download the latest release](https://github.com/Sndav/Header-Studio/releases/latest)
 
 A privacy-first, fully open-source Chrome extension for modifying request and response headers. Organize rules into multiple profiles and match URLs with host wildcards or RE2 regular expressions.
 
@@ -33,18 +33,20 @@ A privacy-first, fully open-source Chrome extension for modifying request and re
 
 ### Install from a release
 
-1. Open [Releases](https://github.com/Sndav/ModHeader/releases).
+1. Open [Releases](https://github.com/Sndav/Header-Studio/releases).
 2. Download and extract the latest `header-studio-v*.zip`.
 3. Open `chrome://extensions` in Chrome.
 4. Enable **Developer mode**.
 5. Select **Load unpacked** and choose the extracted directory.
+
+Each release also includes a fixed-key signed `.crx` package and SHA-256 checksums. Chrome Stable normally blocks CRX installation outside the Chrome Web Store, so the CRX is intended for Chromium builds or enterprise environments that permit offline extensions. Regular Chrome users should use the ZIP method above.
 
 ### Build from source
 
 Node.js 20.19 or newer is required.
 
 ```bash
-git clone https://github.com/Sndav/ModHeader.git
+git clone https://github.com/Sndav/Header-Studio.git
 cd ModHeader
 npm ci
 npm run build
@@ -126,7 +128,7 @@ npm test
 npm run build
 ```
 
-GitHub Actions runs type checking, tests, and a production build for every commit and pull request. Pushing a `v*` tag automatically creates a GitHub Release with an unpacked-extension ZIP and its SHA-256 checksum.
+GitHub Actions runs type checking, tests, and a production build for every commit and pull request. Pushing a `v*` tag automatically creates a GitHub Release with a ZIP, a fixed-key signed CRX, and SHA-256 checksums for both.
 
 ## License
 

@@ -2,7 +2,7 @@
 
 **中文** · [English](README.en.md)
 
-[GitHub 仓库](https://github.com/Sndav/ModHeader) · [下载最新版本](https://github.com/Sndav/ModHeader/releases/latest)
+[GitHub 仓库](https://github.com/Sndav/Header-Studio) · [下载最新版本](https://github.com/Sndav/Header-Studio/releases/latest)
 
 一个隐私优先、完全开源的 Chrome Header 修改工具。通过多个 Profile 修改 Request 和 Response Headers，支持 Host 通配符与 RE2 正则匹配。
 
@@ -33,18 +33,20 @@
 
 ### 从 Release 安装
 
-1. 打开 [Releases](https://github.com/Sndav/ModHeader/releases)。
+1. 打开 [Releases](https://github.com/Sndav/Header-Studio/releases)。
 2. 下载最新的 `header-studio-v*.zip` 并解压。
 3. 打开 Chrome，在地址栏进入 `chrome://extensions`。
 4. 打开右上角的“开发者模式”。
 5. 点击“加载已解压的扩展程序”，选择刚解压的目录。
+
+Release 同时提供使用固定密钥签名的 `.crx` 文件及 SHA-256 校验文件。由于 Chrome Stable 通常会阻止从 Chrome Web Store 之外直接安装 CRX，CRX 更适用于允许离线扩展的 Chromium 或企业策略环境；普通 Chrome 用户应使用上面的 ZIP 安装方式。
 
 ### 从源码安装
 
 需要 Node.js 20.19 或更高版本。
 
 ```bash
-git clone https://github.com/Sndav/ModHeader.git
+git clone https://github.com/Sndav/Header-Studio.git
 cd ModHeader
 npm ci
 npm run build
@@ -126,7 +128,7 @@ npm test
 npm run build
 ```
 
-GitHub Actions 会对每次提交和 Pull Request 执行类型检查、测试与生产构建。推送 `v*` 标签时会自动创建 GitHub Release，附带可直接加载的 ZIP 与 SHA-256 校验文件。
+GitHub Actions 会对每次提交和 Pull Request 执行类型检查、测试与生产构建。推送 `v*` 标签时会自动创建 GitHub Release，附带 ZIP、固定密钥签名的 CRX 以及各自的 SHA-256 校验文件。
 
 ## 开源协议
 

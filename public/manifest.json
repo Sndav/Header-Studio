@@ -3,6 +3,7 @@
   "name": "__MSG_appName__",
   "description": "__MSG_appDescription__",
   "version": "0.1.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmBqOMNV4P4qq0zzL8cTWv89ZEztdAJPmSBPZn4hQl5GneJdwdUAsH8pi/asg80lGUrvdYcvcI0CGXKN8S9k627JGYC3mJVv3SrQeA8AFswWjkMPbXY4QZ92E51/Ku9zmiyjxRgkbKcAFkLhd5lRpwmOnR/jqN/xKVkzihbbCTh9jus0MIH6n7z7IvSL1F+RID2QNVOITLgD5WyBSrSpQRuYwCrGKtwxGyqfX5AIv94tikuh7w4q3z6F69jXC3AY6ExXOv4SDNQK9c5729WcOdN5VEnmxa0lxoxnoI7LKfZI/8XuzUVRCftQdfm/ux1VXvpQwMMBSWKFbERXystQiQQIDAQAB",
   "default_locale": "zh_CN",
   "minimum_chrome_version": "120",
   "permissions": [
