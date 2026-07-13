@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-13T11:30:00+08:00",
+  "title": "Design System: Header Studio",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Workbench Amber",
+        "canonical": "oklch(0.62 0.16 68)",
+        "tonalRamp": ["oklch(0.18 0.08 68)", "oklch(0.28 0.11 68)", "oklch(0.38 0.14 68)", "oklch(0.48 0.16 68)", "oklch(0.62 0.16 68)", "oklch(0.74 0.13 68)", "oklch(0.86 0.08 68)", "oklch(0.95 0.035 68)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Graphite Ink",
+        "canonical": "oklch(0.22 0.012 68)",
+        "tonalRamp": ["oklch(0.15 0.012 68)", "oklch(0.22 0.012 68)", "oklch(0.34 0.011 68)", "oklch(0.46 0.01 68)", "oklch(0.58 0.009 68)", "oklch(0.7 0.007 68)", "oklch(0.84 0.005 68)", "oklch(0.95 0.002 68)"]
+      }
+    },
+    "typographyMeta": {
+      "title": { "displayName": "Tool Title", "purpose": "Profile names and top-level tool identity." },
+      "body": { "displayName": "Compact Body", "purpose": "Controls, values and supporting copy." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "state", "value": "160ms cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Switches and disclosure state changes only." }
+    ],
+    "breakpoints": [
+      { "name": "popup", "value": "760px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Adds a profile, matcher, or header row.",
+      "html": "<button class=\"ds-btn-primary\">Add header</button>",
+      "css": ".ds-btn-primary { border: 0; border-radius: 6px; padding: 8px 12px; background: oklch(0.62 0.16 68); color: white; font: 600 12px Inter, system-ui, sans-serif; } .ds-btn-primary:hover { background: oklch(0.54 0.16 68); } .ds-btn-primary:focus-visible { outline: 2px solid oklch(0.66 0.15 68 / .3); outline-offset: 2px; }"
+    },
+    {
+      "name": "Technical Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Compact field for header names, values, hosts, and regex.",
+      "html": "<input class=\"ds-tech-input\" value=\"Authorization\" />",
+      "css": ".ds-tech-input { border: 1px solid oklch(0.87 0.008 68); border-radius: 6px; padding: 7px 9px; color: oklch(0.22 0.012 68); background: white; font: 12px ui-monospace, monospace; } .ds-tech-input:focus { border-color: oklch(0.62 0.16 68); outline: 2px solid oklch(0.66 0.15 68 / .28); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Calibrated Workbench",
+    "overview": "A compact, local-first developer tool whose state is always visible and whose controls stay familiar.",
+    "keyCharacteristics": ["Compact but not crowded", "Explicit active state", "Stable field alignment", "Progressive advanced matching"],
+    "rules": [
+      { "name": "The Sparse Accent Rule", "body": "Amber occupies no more than ten percent of the visible surface.", "section": "colors" },
+      { "name": "The Flat-By-Default Rule", "body": "Static surfaces use dividers and tonal layers, not shadows.", "section": "elevation" }
+    ],
+    "dos": ["Do keep controls keyboard accessible and visibly focused.", "Do show whether each profile and rule is active."],
+    "donts": ["Don't use SaaS dashboard cards, glassmorphism, or purple gradients.", "Don't nest interactive controls or encode state with color alone."]
+  }
+}
